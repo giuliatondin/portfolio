@@ -1,0 +1,30 @@
+@import '../scss/variables';
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.text {
+    font-family: $font;
+    color: $primary-color;
+    font-size: 15px;
+    &__bold {
+        color: $terciary-color;
+        font-weight: 500;
+    }
+}
+
+.btn {
+    background-color: $terciary-color;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    &:hover {
+        background-color: transparent;
+        border-color: $terciary-color;
+        color: $terciary-color;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles.scss';
+
+.nav {
+    a { 
+        font-family: $font;
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+    li {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    .navbar-brand {
+        margin-right: 0px;
+    }
+}
