@@ -9,6 +9,11 @@ import { AppMenuComponent } from '../app-menu/app-menu.component';
 })
 export class AppHomeComponent implements OnInit {
 
+  social = {
+    link: 'https://www.linkedin.com/in/giulia-tondin-621290145/',
+    link_title: 'Open Linkedin profile'
+  }
+
   constructor() { }
 
   ngOnInit(): void {

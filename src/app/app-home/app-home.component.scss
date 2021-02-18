@@ -3,3 +3,30 @@
 div {
     background-color: $secondary-color;
 }
+
+.home {
+    &__pic {
+        border-radius: 300px 300px 200px 200px;
+        border-color: $terciary-color;
+        width: 100%;
+        max-width: 400px;
+    }
+    &__description {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        &--border {       
+            border-left-color: $primary-color;
+            border-left-style: inset;
+            border-left-width: 2px;
+        }    
+        h2 {
+            font-family: $font;
+            font-size: 40px;
+            @include media-breakpoint-down(sm){
+                font-size: 30px;
+            }
+        }
+    }
+}
