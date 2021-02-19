@@ -1,24 +1,60 @@
 @import '../../styles.scss';
 
 .nav {
-    a { 
+    &__itens { 
         font-family: $font;
         text-decoration: none;
         color: $primary-color;
         font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 600;
-        &:hover {
-            color: $terciary-color;
+        text-transform:lowercase;
+        font-weight: 700;
+        &:hover{
+            color: $terciary-color !important;
         }
+        &::before {
+            content: '<';
+            margin-right: -8px;
+        }
+        &::after {
+            content: '>';
+            margin-left: -8px;
+        }
+    }
+    ul {
+        width: 100%;
     }
     li {
         margin-right: 50px;
         &:last-child {
             margin-right: 0px;
         }
+        @include media-breakpoint-down(md) {
+            margin-right: 0px;
+        }
     }
     .navbar-brand {
         margin-right: 0px;
+    }
+    &__social {
+        border: 1px dashed transparent;
+        width: 30px;
+        height: 30px;
+        margin-right: 25px;
+        &:hover{
+            border: 1px dashed $terciary-color;
+            border-radius: 50px;
+        } 
+        &:last-child {
+            margin-right: 0px;
+        }
+        @include media-breakpoint-up(md) {
+            width: 35px;
+            height: 35px;
+        }
+        &--icon {
+            padding:0px;
+            padding: 6px;
+            width: 100%;
+        }
     }
 }

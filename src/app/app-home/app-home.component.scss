@@ -21,11 +21,29 @@ div {
             border-left-style: inset;
             border-left-width: 2px;
         }    
-        h2 {
-            font-family: $font;
-            font-size: 40px;
-            @include media-breakpoint-down(sm){
-                font-size: 30px;
+        // &--title {
+        //     font-family: $font;
+        //     font-size: 40px;
+        //     @include media-breakpoint-down(sm){
+        //         font-size: 30px;
+        //     }
+        // }
+        &--text {
+            p {
+                padding-left: 20px;
+                margin: 0px;
+            }
+            &::before {
+                content: '<about me>';
+                display:block;
+                font-weight: 600;
+                color: $terciary-color;
+            }
+            &::after {
+                content: '</about me>';
+                display: block;
+                font-weight: 600;
+                color: $terciary-color;
             }
         }
     }
