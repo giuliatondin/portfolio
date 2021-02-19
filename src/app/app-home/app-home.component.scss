@@ -1,15 +1,19 @@
 @import '../../styles.scss';
 
-div {
-    background-color: $secondary-color;
-}
-
 .home {
     &__pic {
-        border-radius: 300px 300px 200px 200px;
-        border-color: $terciary-color;
-        width: 100%;
-        max-width: 400px;
+        img {
+            border-radius: 300px;
+            border-color: $terciary-color;
+            width: 100%;
+            max-width: 400px;
+            @include media-breakpoint-down(sm){
+                width: 250px;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            order: 2;
+        }
     }
     &__description {
         height: 100%;
@@ -21,6 +25,9 @@ div {
             border-left-style: inset;
             border-left-width: 2px;
         }    
+        @include media-breakpoint-down(sm){
+            order: 1;
+        }
         // &--title {
         //     font-family: $font;
         //     font-size: 40px;

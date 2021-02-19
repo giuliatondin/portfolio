@@ -6,21 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-menu.component.scss']
 })
 export class AppMenuComponent implements OnInit {
-
-  teste = 'testando sem for'
-
+  
   links = [
     {
       title: 'Home',
       page: '/'
     },
     {
-      title: 'Work',
-      page: '/work'
+      title: 'Experiences',
+      page: '/experiences'
     },
     {
-      title: 'Contact',
-      page: '/contact'
+      title: 'Projects',
+      page: '/projects'
     }
   ]
 

@@ -36,13 +36,12 @@
         margin-right: 0px;
     }
     &__social {
-        border: 1px dashed transparent;
+        border: 1px solid transparent;
         width: 30px;
         height: 30px;
         margin-right: 25px;
         &:hover{
-            border: 1px dashed $terciary-color;
-            border-radius: 50px;
+            border: 1px solid $terciary-color;
         } 
         &:last-child {
             margin-right: 0px;

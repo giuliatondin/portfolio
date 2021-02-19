@@ -1,5 +1,10 @@
 @import '../scss/variables';
 
+.background {
+    background-color: $secondary-color;
+}
+
+
 .page-container {
     position: relative;
     min-height: 100vh;

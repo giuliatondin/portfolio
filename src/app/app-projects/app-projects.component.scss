@@ -1,0 +1,10 @@
+@import "../../styles.scss";
+
+.projects {
+    &__box {
+        background-color: $secondary-color;
+        width: 80%;
+        padding: 80px;
+        border: 1px solid $terciary-color;
+    }
+}
